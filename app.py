@@ -41,7 +41,7 @@ projects = [
         'slug': 'true-value',
         'description': 'Identify Maruti customers likely to sell/exchange cars.',
         'tech': 'XGBoost, Python, CRM Integration',
-        'image': 'true_value.png',
+        'image': 'true_value.jpg',
         'details': '''
         Created a classification model to predict which customers are likely to evaluate/sell their cars. Integrated into Maruti CRM to identify leads for True Value used car business, improving inventory procurement from existing customers.
         '''
@@ -51,7 +51,7 @@ projects = [
         'slug': 'ev-segmentation',
         'description': 'Identify target audience for upcoming electric vehicle launch.',
         'tech': 'KMeans, PCA, Customer Profiling',
-        'image': 'ev_segmentation.png',
+        'image': 'ev_segmentation.jpg',
         'details': '''
         Used clustering to segment customers based on behavior and demographics. Helped marketing team identify the most suitable segments for Maruti's EV rollout strategy and tailor campaigns accordingly.
         '''
