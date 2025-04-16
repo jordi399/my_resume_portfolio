@@ -33,7 +33,7 @@ projects = [
         'tech': 'Ridge Regression, Adstock, S-Curves, Python',
         'image': 'mmm_walmart_media.png',
         'details': '''
-        Built a Marketing Mix Model to estimate channel-wise contribution to sales. Modeled ad saturation using S-curves and decay via adstock transformation. Helped marketing team reallocate budgets across paid media channels to maximize ROI.
+        Built a Marketing Mix Model to estimate channel-wise contribution to sales. Modeled ad saturation using S-curves and decay via adstock transformation. Helped marketing team reallocate budgets across paid media channels to maximize ROAs.
         '''
     },
     {
