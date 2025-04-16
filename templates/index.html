@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Home | Pankaj{% endblock %}
+
+{% block content %}
+<div class="row align-items-center mb-5">
+  <!-- Profile Image -->
+  <div class="col-md-4 text-center mb-3 mb-md-0">
+    <img src="{{ url_for('static', filename='images/my_image.jpeg') }}" alt="Pankaj's Photo" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+  </div>
+
+  <!-- Intro Text -->
+  <div class="col-md-8 text-center text-md-start">
+    <h1 class="fw-bold">Hi, I'm Pankaj 👋</h1>
+    <p class="lead text-muted">
+      Data Scientist with 4+ years of experience in ML, marketing analytics, and building impactful models across the automotive and finance domains.
+    </p>
+    <a href="{{ url_for('static', filename='resume.pdf') }}" class="btn btn-primary mt-2">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+  </div>
+</div>
+
+<hr class="my-5">
+
+<!-- What Do I Do Section -->
+<section class="mb-5">
+  <h2 class="text-center mb-4">🔍 What Do I Do?</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fas fa-brain fa-2x text-primary mb-3"></i>
+          <h5>ML Modeling</h5>
+          <p>End-to-end model building including lead scoring, MMM, customer segmentation, and forecasting.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fas fa-chart-line fa-2x text-success mb-3"></i>
+          <h5>Analytics Consulting</h5>
+          <p>Worked with marketing and business leaders to drive insight-backed decisions using data science.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fas fa-code fa-2x text-danger mb-3"></i>
+          <h5>Full-Stack Portfolio</h5>
+          <p>Building and hosting professional websites and dashboards using Flask, SQL, and visualization tools.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="my-5">
+
+<!-- Skills Section (as previously added) -->
+<h2 class="text-center mb-4">Skills Overview</h2>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+
+  <!-- Modeling & Machine Learning -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">🤖 Modeling & Machine Learning</h5>
+        <ul class="list-unstyled mt-3 mb-0">
+          <li>• Regression & Classification</li>
+          <li>• Lead Scoring Models</li>
+          <li>• Customer Segmentation</li>
+          <li>• Market Mix Modeling (MMM)</li>
+          <li>• A/B Testing</li>
+          <li>• Forecasting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Handling & Analysis -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">📊 Data Handling & Analysis</h5>
+        <ul class="list-unstyled mt-3 mb-0">
+          <li>• Python (Pandas, NumPy)</li>
+          <li>• SQL</li>
+          <li>• Data Cleaning</li>
+          <li>• Exploratory Data Analysis (EDA)</li>
+          <li>• Feature Engineering</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visualization Tools -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">📈 Visualization Tools</h5>
+        <ul class="list-unstyled mt-3 mb-0">
+          <li>• Power BI</li>
+          <li>• Tableau</li>
+          <li>• Matplotlib & Seaborn</li>
+          <li>• Plotly</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tech & Tools -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">🛠️ Tech & Tools</h5>
+        <ul class="list-unstyled mt-3 mb-0">
+          <li>• LightGBM</li>
+          <li>• scikit-learn</li>
+          <li>• Jupyter Notebooks</li>
+          <li>• Git & GitHub</li>
+          <li>• Flask</li>
+          <li>• VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

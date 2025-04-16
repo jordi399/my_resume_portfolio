@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}About | Pankaj{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="mb-4 text-center">About Me</h1>
+
+  <div class="row align-items-center mb-5">
+    <div class="col-md-4 text-center mb-4">
+      <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Pankaj" class="img-fluid rounded-circle shadow" width="200">
+    </div>
+    <div class="col-md-8">
+      <p>
+        I'm Pankaj Singh Rawat, a Data Scientist with 4+ years of experience delivering business-impacting solutions using Machine Learning, Predictive Modeling, and Marketing Analytics.
+        I specialize in end-to-end project development, strategic insights, and cross-functional collaboration.
+      </p>
+    </div>
+  </div>
+
+  <h3 class="mb-3">Education</h3>
+  <ul>
+    <li><strong>B.Tech in Computer Science</strong> – Jamia Hamdard University</li>
+  </ul>
+
+  <hr>
+
+  <h3 class="mt-5 mb-3">Professional Experience</h3>
+
+  <div class="accordion" id="experienceAccordion">
+
+    <!-- EXL -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="exlHeading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exlCollapse">
+          <img src="{{ url_for('static', filename='icons/exl_logo.png') }}" alt="EXL" style="height:30px;" class="me-2">
+          EXL (Feb 2025 – Present)
+        </button>
+      </h2>
+      <div id="exlCollapse" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>Working on advanced analytics and modeling for Citibank.</li>
+            <li>Customer segmentation, scorecards, and marketing optimization projects.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maruti -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="marutiHeading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marutiCollapse">
+          <img src="{{ url_for('static', filename='icons/msil_logo.svg') }}" alt="Maruti" style="height:30px;" class="me-2">
+          Maruti Suzuki (Nov 2023 – Jan 2025)
+        </button>
+      </h2>
+      <div id="marutiCollapse" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>Lead Scoring model to categorize new car enquiries.</li>
+            <li>True Value Evaluation Model for car resale prediction.</li>
+            <li>EV Customer Segmentation model for Maruti’s EV launch.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infogain -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="infogainHeading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infogainCollapse">
+          <img src="{{ url_for('static', filename='icons/infogain_logo.jpeg') }}" alt="Infogain" style="height:30px;" class="me-2">
+          Infogain (Sep 2021 – Nov 2023)
+        </button>
+      </h2>
+      <div id="infogainCollapse" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>Led MMM development for Walmart Automotive category.</li>
+            <li>Built ROAS-optimized models using S-curves and Ridge Regression.</li>
+            <li>Developed automated dashboards and pipelines for marketing performance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

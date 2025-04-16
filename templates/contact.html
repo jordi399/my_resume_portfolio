@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Contact | Pankaj{% endblock %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+  <h2 class="text-center mb-5">Get in Touch</h2>
+
+  <div class="row">
+    <!-- Contact Info -->
+    <div class="col-md-5">
+      <div class="p-4 border rounded shadow-sm">
+        <h4 class="mb-3">Contact Information</h4>
+        
+        <p>
+          <i class="fas fa-envelope me-2"></i><strong>Email:</strong>
+          <a href="mailto:pankajrawat399@email.com">pankajrawat399@email.com</a>
+        </p>
+        
+        <p>
+          <i class="fas fa-phone-alt me-2"></i><strong>Mobile:</strong>
+          <a href="tel:+918447973190" class="btn btn-link p-0">+91-8447973190</a>
+        </p>
+        
+        <p>
+          <i class="fab fa-linkedin me-2"></i><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/pankaj-singh-rawat-495691bb" target="_blank">linkedin.com/in/PankajSinghRawat</a>
+        </p>
+        
+        <p>
+          <i class="fab fa-github me-2"></i><strong>GitHub:</strong>
+          <a href="https://github.com/jordi399" target="_blank">github.com/Jordi399</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-7 mt-4 mt-md-0">
+      <div class="p-4 border rounded shadow-sm">
+        <h4 class="mb-3">Send a Message</h4>
+
+        {% if success %}
+          <div class="alert alert-success">Thank you! Your message was sent successfully.</div>
+        {% endif %}
+
+        <form method="POST" action="{{ url_for('contact') }}">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" class="form-control" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
