@@ -41,7 +41,7 @@ projects = [
         'slug': 'true-value',
         'description': 'Identify Maruti customers likely to sell/exchange cars.',
         'tech': 'XGBoost, Python, CRM Integration',
-        'image': 'true_value.jpg',
+        'image': 'true_value.png',
         'details': '''
         Created a classification model to predict which customers are likely to evaluate/sell their cars. Integrated into Maruti CRM to identify leads for True Value used car business, improving Customer Lifetime Value (CLV) of existing customers.
         '''
